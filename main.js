@@ -36,6 +36,19 @@ $(document).ready(function () {
                 $("#alert").show()
             }
         }
+    })
 
+    $("#uploadButton").click(function(){
+        $("#fileInput").click()
+    })
+
+    $("#record").click(function(){
+        $("#buttons").hide()
+        $("#video").show()
+        startFunction()
+    })
+    
+    $("#uploadToChainButton").click(function () {
+        downloadVideo()
     })
 });
