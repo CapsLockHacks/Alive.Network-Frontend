@@ -28,11 +28,13 @@ $(document).ready(function () {
             $("#alert").hide()
             var status = "success"
             // TODO: call api to checkin heartbeat and set status
-
+            
             if (status === "success"){
                 $("#upload").show()
+                $("#checkin_status").html("<i class=\"fas fa-check\"></i>")
             } else{
                 $("#alert").html("invalid credentials to checkin!")
+                $("#checkin_status").html("<i class=\"fas fa-check\"></i>")
                 $("#alert").show()
             }
         }
