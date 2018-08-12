@@ -29,7 +29,7 @@ function gotMedia(stream) {
 
 // From @samdutton's "Record Audio and Video with MediaRecorder"
 // https://developers.google.com/web/updates/2016/01/mediarecorder
-function download() {
+function downloadVideo() {
   theRecorder.stop();
   theStream.getTracks().forEach(track => { track.stop(); });
 

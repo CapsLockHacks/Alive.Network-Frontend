@@ -1,7 +1,9 @@
 <html>
 <head>
   <link href='custom.css' rel="stylesheet" type="text/css">
-
+  <script src="web3.min.js"></script>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="video.js"></script>
 </head>
 <body>
 
@@ -21,11 +23,18 @@
       <br />
       <br />
 
+          
+      <video id="video" autoplay width=320></video>
+
+      <a href="#" onclick="startFunction()">Grab video & start recording</a>
+      <a href="#" onclick="downloadVideo()">Download! (and stop video)</a>
+          
+
     </form>
 
 
       </div>
-      <div class="card__next">next →</div>
+      <div class="card__next">next</div>
     </div>
     <div class="card__shadow">
       <div class="card__shadow-inner"></div>
