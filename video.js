@@ -20,9 +20,9 @@ function gotMedia(stream) {
     console.error('Exception while creating MediaRecorder: ' + e);
     return;
   }
-  
+
   theRecorder = recorder;
-  recorder.ondataavailable = 
+  recorder.ondataavailable =
       (event) => { recordedChunks.push(event.data); };
   recorder.start(100);
 }
@@ -47,6 +47,4 @@ function downloadVideo() {
   }).done(function (data) {
     console.log(data);
   });
-
 }
-
