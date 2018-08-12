@@ -6,12 +6,22 @@
     <title>Whistle.App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-    <script src="main.js"></script>
-    <script src="jquery-3.3.1.min.js"></script>
     <script src="video.js"></script>
 </head>
 <body>
+    <div id="alert"></div>
+    <div>
+        Wallet: <input type="text" id="wallet">
+        Seed: <input type="password" id="seed">
+        is it your first time? <a href="#" id="generate">generate wallet?</a>
+    </div>
+    <div>
+        <button id="checkin" type="button">Check In HeartFontAwesome</button>
+        <div id="checkin_success">success</div>
+        <div id="checkin_fail">fail</div>
+    </div>
     
-    
+    <script src="jquery-3.3.1.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
