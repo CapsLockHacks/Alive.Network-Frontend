@@ -122,8 +122,12 @@ $(document).ready(function () {
                 processData: false,
                 mimeType: "multipart/form-data",
                 success: function (result) {
+                  if(result.result===true){
                   console.log(result);
                   status = "success";
+                  M.toast({ html: "File successfully uploaded!" })
+
+                }
                 },
                 error: function (err) {
                   console.log(err);
