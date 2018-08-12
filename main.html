@@ -23,15 +23,20 @@
         
         <div class="row">
             <div class="twelve columns">
-                Whistle.network
+                <nav>
+                    <div class="nav-wrapper">
+                         &nbsp;&nbsp;
+                        <a href="#" class="brand-logo"><i class="fas fa-bullhorn"></i> whistle.network</a>
+                    </div>
+                </nav>
             </div>
         </div>
         
-        <div class="row">
+        <!--<div class="row">
             <div class="twelve columns">
                 <div id="alert"></div>
             </div>
-        </div>
+        </div>-->
         
         <div class="row">
             <div class="6 columns">
@@ -44,16 +49,16 @@
         </div>
         <div class="row">
             <div class="twelve columns">
-                is it your first time? <a href="#" id="generate">generate wallet?</a>
+                don't have a wallet? let us <a href="#" id="generate">generate a wallet</a> for you securely, just enter a seed.
             </div>
         </div>
         
         <div class="row">
-            <div class="ten columns">
+            <div class="eleven columns">
                 <a id="checkin" style="width:100%" class="waves-effect waves-light btn">
                     <i class="fas fa-heart"></i> check in</a>
                 </div>
-                <div class="two columns">
+                <div class="one columns">
                     <div id="checkin_status"></div>
                 </div>
             </div>
@@ -63,36 +68,40 @@
             </div>
             <div class="row" id="upload"> 
                 <div class="twelve columns">
-                    <div div class="rows" id="buttons">
-                        <div class="6 columns">
+                    <div class="row" id="buttons">
+                        <div class="six columns">
                             <a id="uploadButton" style="width:100%; height: 150px;" class="waves-effect waves-light btn">
-                                <i class="fas fa-upload"></i> upload file</a>
-                            </div>
-                            <div class="6 columns">
-                                <a id="record" style="width:100%; height: 150px;" class="waves-effect waves-light btn">
-                                    <i class="fas fa-video"></i> record video</a>
-                                </div>
-                            </div>
+                                <i class="fas fa-upload"></i> upload file
+                            </a>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="twelve columns" id="video">
-                            <video id="video" autoplay width=3two0></video>
-                            <a href="#" id="uploadToChainButton">Done Recording</a>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="twelve columns" id="submitToAPI">
-                            <a href="#" style="width:100%; height: 150px;" class="waves-effect waves-light btn" id="uploadToAPI">Upload</a>
+                        <div class="six columns">
+                            <a id="record" style="width:100%; height: 150px;" class="waves-effect waves-light btn">
+                                <i class="fas fa-video"></i> record video
+                            </a>
                         </div>
                     </div>
                 </div>
-                <script src="jquery-3.3.1.min.js"></script>
-                <script src="main.js"></script>
-                
-                
             </div>
             
-        </body>
-        </html>
+            <div class="row">
+                <div class="twelve columns" id="video">
+                    <video id="video" autoplay width="500px"></video>
+                    <br>
+                    <a href="#" class="waves-effect waves-light btn" id="uploadToChainButton">Done Recording</a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="twelve columns" id="submitToAPI">
+                    <a href="#" style="width:100%; height: 150px;" class="waves-effect waves-light btn" id="uploadToAPI">Upload</a>
+                </div>
+            </div>
+        </div>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="main.js"></script>
         
+        
+    </div>
+    
+</body>
+</html>
+
