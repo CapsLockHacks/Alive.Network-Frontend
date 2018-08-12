@@ -1,5 +1,10 @@
 <html>
 <head>
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
   <link href='custom.css' rel="stylesheet" type="text/css">
   <script src="web3.min.js"></script>
   <script src="jquery-3.3.1.min.js"></script>
@@ -8,7 +13,7 @@
 <body>
 
 
-<div class="">
+<div class="col s7 m4">
   <div class="card">
     <div class="card__contents">
       <div class="card__title">Welcome</div>
@@ -23,12 +28,13 @@
       <br />
       <br />
 
-          
-      <video id="video" autoplay width=320></video>
 
+      <video id="video" autoplay width=320></video>
+      <br/>
       <a href="#" onclick="startFunction()">Grab video & start recording</a>
+      <br/>
       <a href="#" onclick="downloadVideo()">Download! (and stop video)</a>
-          
+
 
     </form>
 
