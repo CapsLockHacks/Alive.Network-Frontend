@@ -34,14 +34,18 @@ function downloadVideo() {
   theStream.getTracks().forEach(track => { track.stop(); });
 
   var blob = new Blob(recordedChunks, {type: "video/webm"});
-  var url =  URL.createObjectURL(blob);
-  var a = document.createElement("a");
-  document.body.appendChild(a);
-  a.style = "display: none";
-  a.href = url;
-  a.download = 'test.webm';
-  a.click();
-  // setTimeout() here is needed for Firefox.
-  setTimeout(function() { URL.revokeObjectURL(url); }, 100); 
+
+  var fd = new FormData();
+  fd.append('fname', 'video.webm');
+  fd.append('data', blob);
+  $.ajax({
+    type: 'POST',
+    url: 'http://172.16.21.223:3000/api/platform/uploadDocument',
+    data: fd,
+    processData: false,
+    contentType: false
+  }).done(function (data) {
+    console.log(data);
+  });
 }
 
