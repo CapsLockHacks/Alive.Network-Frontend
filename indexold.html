@@ -1,0 +1,107 @@
+<html>
+<head>
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+  <link href='custom.css' rel="stylesheet" type="text/css">
+  <script src="web3.min.js"></script>
+  <script src="jquery-3.3.1.min.js"></script>
+  <script src="video.js"></script>
+</head>
+<body>
+
+
+<div class="col s7 m4">
+  <div class="card">
+    <div class="card__contents">
+      <div class="card__title">Welcome</div>
+      <div class="card__body">
+        <p>Step 1: Please upload the video content to be kept safe and encrypted.</p>
+      <br />
+        <form action="#" method="post"   enctype="multipart/form-data">
+      <label for="file">Filename:</label>
+      <br />
+
+      <input type="file" name="file" id="file" />
+      <br />
+      <br />
+
+
+      <video id="video" autoplay width=320></video>
+      <br/>
+      <a href="#" onclick="startFunction()">Grab video & start recording</a>
+      <br/>
+      <a href="#" onclick="downloadVideo()">Download! (and stop video)</a>
+
+
+    </form>
+
+
+      </div>
+      <div class="card__next">next</div>
+    </div>
+    <div class="card__shadow">
+      <div class="card__shadow-inner"></div>
+    </div>
+    <div class="card__index">1</div>
+  </div>
+  <div class="card">
+    <div class="card__contents">
+      <div class="card__title">Step 2: Select frequency of heartbeat update in days.</div>
+      <div class="card__body">
+        <form action="#">
+          Release threshold after:
+          <input type="number" name="Days" min="1" max="365"> Days
+        </form>
+      </div>
+      <div class="card__next">next</div>
+    </div>
+    <div class="card__shadow">
+      <div class="card__shadow-inner"></div>
+    </div>
+    <div class="card__index">2</div>
+  </div>
+  <div class="card">
+    <div class="card__contents">
+      <div class="card__title">Step 3: Add email ids of aliases / recipients.</div>
+      <div class="card__body">
+        <form action="#">
+          Alias 1:
+          <input type="email" name="email1" required="" placeholder="johndoe@gmail.com" >
+          Alias 2:
+          <input type="email" name="email2" required="" placeholder="johndoe@gmail.com" >
+        </form>
+      </div>
+      <div class="card__next">next</div>
+    </div>
+    <div class="card__shadow">
+      <div class="card__shadow-inner"></div>
+    </div>
+    <div class="card__index">3</div>
+  </div>
+  <div class="card">
+    <div class="card__contents">
+      <div class="card__title">Confirm</div>
+      <div class="card__body">
+        <p>Are you sure you want to upload the content? This cannot be undone later.</p>
+        <form action="#">
+        <input class="card__radio" type="radio" name="yes" id="yes"><label for="yes">Yes</label>
+        <input class="card__radio" type="radio" name="no" id="no"><label for="no">No</label>
+        <input type="submit">
+      </form>
+
+      </div>
+    </div>
+    <div class="card__shadow">
+      <div class="card__shadow-inner"></div>
+    </div>
+    <div class="card__index">4</div>
+  </div>
+
+</div>
+
+<script type="text/javascript" src="custom.js"></script>
+</body>
+</html>
